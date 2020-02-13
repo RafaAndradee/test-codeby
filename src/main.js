@@ -1,4 +1,4 @@
-const url = 'data/abaixo-10-reais.json'
+const url = 'data/acima-10-reais.json'
 
 const ul = document.querySelector('#productList')
 
@@ -22,19 +22,32 @@ fetch(url)
       //item.listPrice.toFixed(2) / 100
       itemList.className = "productBox" 
       itemList.innerHTML = `
-
-      <img src="${item.imageUrl}" alt="">
-
-      <div>
+      <div id="cartImageBox">
+      <img src="https://dummyimage.com/120x120/fff/878787.png&text=Produto" alt="">
+      </div>
+      <div id="cartDetails">
       <h4>${item.name}</h4>
-      <p>${formatMoney(item.listPrice)}</p>
-      <p>R$ ${formatMoney(item.sellingPrice)}</p>
+      <p id="listPrice">${formatMoney(item.listPrice)}</p>
+      <p id="sellingPrice">${formatMoney(item.sellingPrice)}</p>
       </div>
       `
+      ul.appendChild(itemList)    
       
-      ul.appendChild(itemList)
+
+    })
+
+    
+    const sellingPrices = products.map(prices => {
+      return prices.sellingPrice
+    })
+    const totalPrice = sellingPrices.reduce((total, current) => {
+      return total + current
     })
     
+    document.getElementById('totalPrice').innerHTML = formatMoney(totalPrice)
+    console.log(formatMoney(totalPrice));
+    
+
   })
 
   
