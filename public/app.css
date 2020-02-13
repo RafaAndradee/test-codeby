@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Poppins;
+    src: url(assets/font/Poppins-regular.ttf);
+  }
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(assets/font/Poppins-Bold.ttf);
+}
+
+body {
+    font-family: Poppins;
+}
+
+li {
+    list-style: none;
+}
+
+.cartWrap > h3, button{
+    text-align: center;
+}
+
+.productBox{
+    display: flex;
+}
+
+.productBox > div {
+    
+}
+
+.productBox > img {
+    width: 117px;
+    height: auto;
+}
