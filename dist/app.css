@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Poppins;
+    src: url(assets/font/Poppins-regular.ttf);
+  }
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(assets/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(assets/font/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(assets/font/Poppins-Medium.ttf);
+}
+
+body {
+    font-family: Poppins;
+    background-color: #d1d8e5;
+    text-align: center;
+}
+
+ul{
+    padding-inline-start: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: #3b74f2;
+    border: none;
+    width: 90%;
+    font-family: Poppins-ExtraBold;
+    color: #fff;
+    margin: 23px 5px;
+    border-radius: 6px;
+}
+
+
+.cartTitle{
+    font-weight: 400;
+    border-bottom: solid 1px #c4c4c4;
+}
+
+.cartWrap{
+    background-color: #fff;
+    width: 500px;
+    display: inline-block;
+    box-shadow: 0 0 10px #b7b7b7;
+    border-radius: 10px;
+}
+
+.cartWrap > div > h3, button{
+    text-align: center;
+}
+
+.cartWrap > div > h3{
+    font-family: Poppins-ExtraBold;
+}
+
+#listPrice{
+    color: #a5a5a5;
+    font-size: 14px;
+
+}
+
+#sellingPrice{
+    font-size: 18px;
+}
+
+
+#totalWrap {
+    border-block-end: solid 1px #c4c4c4;
+    border-block-start: solid 1px #c4c4c4;
+    padding-block-end: 20px;
+    padding-block-start: 20px;
+}
+
+#totalWrap > div{
+
+    font-family: Poppins-ExtraBold;
+    display: flex;
+
+}
+
+#totalTitle{
+    margin: 5px 25px;
+    width: 100%;
+    text-align: left;
+}
+
+#totalPrice{
+    margin: 5px 25px;
+}
+
+#freteFree {
+    background-color: #c7ffa6;
+    padding: 10px;
+    border-radius: 23px;
+    margin: 16px 38px;
+    display: block;
+    color: #217a00;
+}
+.productBox{
+    display: flex;
+}
+
+.productBox > div {
+    
+}
+
+#cartDetails {
+    text-align: left;
+    margin: 20px 5px;
+}
+
+#cartDetails > h4{
+    text-align: left;
+    margin: 5px 5px;
+    font-family: Poppins-ExtraBold;
+}
+
+#cartDetails > p{
+    margin: 4px 10px 5px 10px;
+    font-family: Poppins-Medium;
+}
+
+
+#cartImageBox{
+    width: 120px;
+    margin: 15px;
+}
+
+.productBox > div img {
+    width: 100%;
+    height: auto;
+    border: solid 1px #c4c4c4;
+}

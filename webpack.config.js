@@ -20,22 +20,3 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   }
 }
-
-module.exports = {
-  devServer: {
-    contentBase: path.join(__dirname, PUBLIC_DIR)
-  },
-  entry: path.resolve(__dirname, 'src', 'main.js'),
-  mode: 'production',
-  module: {
-    rules: [{
-      exclude: /node_modules/,
-      test: '/\.js$/'
-      }
-    ]
-  },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  }
-}
