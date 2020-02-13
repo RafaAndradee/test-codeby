@@ -45,7 +45,13 @@ fetch(url)
     })
     
     document.getElementById('totalPrice').innerHTML = formatMoney(totalPrice)
-    console.log(formatMoney(totalPrice));
+
+    const freteFree = document.querySelector('#messageFrete')
+    if (totalPrice > 1000){
+      freteFree.innerHTML = `<p id="freteFree">Parabéns, sua compra tem frete grátis</p>`
+    }
+
+    console.log(totalPrice);
     
 
   })
